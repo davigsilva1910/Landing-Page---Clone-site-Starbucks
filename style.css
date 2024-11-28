@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+/* Importação de fontes */
+@font-face {
+    font-family: 'Sodo-Sans Bold';
+    src: url(font/SoDoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Sodo-Sans SemiBold';
+    src: url(font/SoDoSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Sodo-Sans Regular';
+    src: url(font/SoDoSans-Regular.ttf);
+}
+
+body{
+    overflow-x: hidden; /*Oculta barra de rolagem horizontal*/
+    width: 100vw;
+}
+
+/* Estilizações extras */
+.primary-color {
+    background-color: #D4E9E2;
+}
+
+.text-color {
+    color: #1E3932;
+}
+
+.starbucks_main,
+.header_starbucks {
+    margin: 0 60px;
+}
+
+/* Estilização do header */
+.header_starbucks {
+    font-family: 'Sodo-Sans Bold';
+    height: 15vh;
+}
+
+/*Cabeçalho*/
+.header_starbucks .navbar {
+    font-size: 12.5px;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+}
+
+/*Logotipo do menu à direita*/
+.logotipo-history {
+    width: 120px;
+}
+
+/*Estilização dos links do menu principal*/
+.navbar .container-fluid .nav .nav-item .nav-link:hover {
+    color: blue !important;
+    transition: 300ms;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.navbar .container-fluid .navbar-brand img {
+    width: 50px;
+}
+
+/* Botões das sections 4, 5 */
+.btn {
+    font-family: 'Sodo-Sans SemiBold';
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition: all .3s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.657);
+}
+
+/* Carrossel */
+.container {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    /*Faz com que todos os filhos fiquem relativos ao container*/
+}
+
+.carrossel {
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*Imagens com position 'absolute' para deixá-las relativas ao container*/
+.img1 img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+
+.img2 img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+
+.img3 img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sessão 1 */
+.section1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    visibility: hidden;
+}
+
+.section1 h1 {
+    width: max-content;
+    padding: 30px 10px 0px 30px;
+    margin-left: 820px;
+}
+
+.principais_produtos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.img_produtos_principais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_produtos_principais img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.img_produtos_principais p {
+    max-width: 300px;
+}
+
+.img_produtos_principais p:hover {
+    cursor: pointer;
+    color: #376355;
+    transition: 500ms;
+}
+
+/* Sessão 2 */
+.section2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    visibility: hidden;
+}
+
+.section2 h1 {
+    width: max-content;
+    padding: 30px 10px 0px 30px;
+    margin-left: 960px;
+}
+
+.receitas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.img_receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_receitas img {
+    width: 400px;
+    cursor: pointer;
+}
+
+.img_receitas p {
+    max-width: 300px;
+}
+
+.img_receitas p:hover {
+    cursor: pointer;
+    color: #376355;
+    transition: 500ms;
+}
+
+/* Sessão 3 */
+.section3 {
+    position: relative;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+.section3 h1 {
+    margin-bottom: 20px;
+    margin-left: 960px;
+}
+
+.section3 .sobre_starbucks img {
+    width: 100%;
+    height: 500px;
+    filter: brightness(0.5);
+}
+
+.section3 .desc_sobre_starbucks {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    left: 3%;
+    top: 18%;
+}
+
+.section3 .desc_sobre_starbucks p {
+    max-width: 600px;
+    font-weight: 800;
+}
+
+/* Sessão 4 */
+.section-4{
+    visibility: hidden;    
+}
+
+.section-4 .col-12 p {
+    font-size: 14px;
+    padding: 15px 40px 0;
+}
+
+/* Sessão 5 */
+.section-5{
+    visibility: hidden;
+}
+
+.section-5 .col-12 h3 {
+    padding: 0 80px;
+}
+
+.section-5 .col-12 p {
+    padding: 15px 50px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer-starkbucks {
+    visibility: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .7), 0 2px 8px 0 rgba(0, 0, 0, .5), 0 1px 5px 0 rgba(0, 0, 0, .1);
+    margin-top: 35px;
+    font-family: 'Sodo-Sans Regular';
+    padding: 25px 0 50px;
+}
+
+/*Estilização dos textos do footer*/
+.text-dark-emphasis {
+    color: rgb(148, 148, 148) !important;
+}
+
+/*Titulo de cada linha do footer*/
+.footer-accordion .accordion-button {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.accordion-item .nav {
+    font-size: 14px;
+}
+
+.footer-img-logo {
+    width: 120px;
+}
+
+.footer-links {
+    padding: 20px 80px;
+}
+
+
+.footer-links .nav {
+    width: calc(100% / 4);
+}
+
+.footer-links .nav .nav-item {
+    font-size: 14px;
+}
+
+.footer-links .nav .nav-item .text-dark-emphasis:hover {
+    color: black !important;
+}
